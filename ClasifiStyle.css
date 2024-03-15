@@ -115,7 +115,7 @@ header {
 
 /* MENU RESPONSIVE */
 
-@media(max-width: 1000px) {
+@media(max-width: 900px) {
     .container .lista_menu {
         display: none;
     }
@@ -128,7 +128,7 @@ header {
     }
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 900px) {
     .container .menu_but {
         display: none;
     }
