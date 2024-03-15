@@ -8,3 +8,19 @@ function toggleMenu() {
       menuItems.style.display = "none";
     }
   }
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".foto");
+  const slideCount = slides.length;
+  
+  function nextSlide() {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slideCount;
+    slides[currentSlide].classList.add("active");
+    }
+  
+  setInterval(nextSlide, 5000);
+  });
